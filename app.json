@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/wallet/index/index",
+    
+    "pages/task/index/index",
+    
+    "pages/prop/index/index",
+    "pages/test/response/response",
+    "pages/test/index/index",
+    "pages/test/result/result",
+    "pages/test/rank/rank",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "法律知识极限挑战",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true
+  },
+
+  "navigateToMiniProgramAppIdList": [
+    "wx1e400c1260bebace"
+  ]
+}

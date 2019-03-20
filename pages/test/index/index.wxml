@@ -1,0 +1,58 @@
+<view class="regulation" bindtap='bindShowRulesTip'>
+  <image src='/image/guize.png'></image>
+  <text>答题规则</text>
+</view>
+
+<view class='paper-list'>
+
+
+  <block wx:for="{{paperList}}">
+    <view class='paper-info'  style="background: url('{{item.imageUrl}}') no-repeat;background-size:670rpx 335rpx;">
+      <view class='paper-title'>
+        <text class='title'>{{item.paperName}}</text>
+        <text class='number'>已有{{item.clickCount}}人参与</text>
+      </view>
+      <view class='button-group'>
+        <view class='rank-button' catchtap='bindRank' data-id="{{item.paperId}}">
+          <text>排行榜</text>
+        </view>
+        <block wx:if="{{isLogin == true}}">
+          <view class='begin-button' catchtap='bindPaper' data-id="{{item.paperId}}">
+            <text>开始挑战</text>
+          </view>
+        </block>
+        <block wx:else>
+          <view class='begin-button'>
+            <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" data-id="{{item.paperId}}"> 开始挑战 </button>
+          </view>
+        </block>
+      </view>
+    </view>
+
+  </block>
+</view>
+
+
+<block wx:if="{{rulesTip == true}}">
+  <view class='marks'></view>
+  <view class='notice'>
+    <view class='notice-main'>
+      <view class='notice-main-title'>
+        <text>答题规则</text>
+      </view>
+
+      <view class='notice-main-content'>
+        <text>1、测试共10题，答题可赢取积分。</text>
+        <text>2、每日首次您将会得到与答题分数相同的积分。</text>
+        <text>3、同一个测试，之后每次答对一题积一分。</text>
+        <text>4、答错不积分、不清零。</text>
+      </view>
+      <view class='notice-main-button' bindtap='bindSure'>
+        <text>朕知道了</text>
+      </view>
+      <view class='notice-main-remark' bindtap='bindAlerts'>
+        <!-- <text>不再接受此类消息</text> -->
+      </view>
+    </view>
+  </view>
+</block>

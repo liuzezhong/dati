@@ -1,0 +1,60 @@
+<!--pages/test/rank/rank.wxml-->
+<view class='background-line'></view>
+
+  <view class='user-rank'>
+  <block wx:if="{{myRank != null}}">
+    <view class='user-rank-left'>
+      <view class='user-rank-info'>
+        <text class='number'>{{myRank.rank}}</text>
+        <text class='name'>我的排名</text>
+      </view>
+      <view class='user-header'>
+        <image src='{{myRank.headImgUrl}}'></image>
+      </view>
+      <view class='user-name'>
+        <text>{{myRank.nickname}}</text>
+      </view>
+    </view>
+    <view class='user-score'>
+      <text class='score'>{{myRank.totalScore}}分</text>
+      <text class='time'>{{myRank.totalElapseTime}}秒</text>
+    </view>
+    </block>
+  </view>
+
+  <view class='rank-list'>
+    <block wx:for="{{rankList}}">
+      <view class='rank-line'>
+        <view class='rank-number'>
+          <block wx:if="{{item.rank == 1}}">
+            <image src='/image/no1.png'></image>
+          </block>
+          <block wx:elif="{{item.rank == 2}}">
+            <image src='/image/no2.png'></image>
+          </block>
+          <block wx:elif="{{item.rank == 3}}">
+            <image src='/image/no3.png'></image>
+          </block>
+          <block wx:else>
+            <text>{{item.rank}}</text>
+          </block>
+        </view>
+        <view class='rank-right'>
+          <view class='rank-info'>
+            <view class='rank-user-header'>
+              <image src='{{item.headImgUrl}}'></image>
+            </view>
+            <view class='rank-user-name'>
+              <text>{{item.nickname}}</text>
+            </view>
+          </view>
+          <view class='rank-score'>
+            <text class='score'>{{item.totalScore}}分</text>
+            <text class='time'>{{item.totalElapseTime}}秒</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='bottom-line'></view>
+<!-- </block> -->

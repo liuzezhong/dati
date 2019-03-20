@@ -1,0 +1,103 @@
+<!--index.wxml-->
+<view class='main'>
+  <view class='header-area'>
+    <view class='userinfo-area'>
+      <block wx:if="{{isLogin == true}}">
+        <view class='userheader'>
+          <image src='{{headImgUrl}}'></image>
+        </view>
+        <view class='userinfo'>
+          <text class='username'>{{nickname}}</text>
+          <text class='otherinfo'>正确率:{{userInfo.accuracy}}%</text>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='userheader'>
+          <image src='/image/weidenglu.png'></image>
+        </view>
+        <view class='userinfo'>
+          <button class="loginButton" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 立即登录 </button>
+        </view>
+
+      </block>
+    </view>
+    <block wx:if="{{isLogin == true}}">
+      <view class='userdata-area'>
+      <image src='/image/jifenicon.png'></image>
+      <text>积分:{{userInfo.integral}}</text>
+    </view>
+    </block>
+
+    <block wx:else>
+      <view class='userdata-area'>
+      <image src='/image/jifenicon.png'></image>
+      <text>积分:0</text>
+    </view>
+    </block>
+    
+  </view>
+
+  <view class='test-area' bindtap='bindTest'>
+    <view class='area-title-blod'>
+      <text>答题挑战</text>
+    </view>
+  </view>
+
+  <view class='column-line'>
+    <view class='rank-area' bindtap='bindRank'>
+      <view class='area-title'>
+        <text>排行榜</text>
+      </view>
+    </view>
+
+    <view class='challenge-area' bindtap='bindChallenge'>
+      <view class='area-title-blod'>
+        <text>精选题库</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class='column-line'>
+    <view class='sign-area' bindtap='bindSign'>
+      <view class='area-title'>
+        <text>签到有奖</text>
+      </view>
+
+      <view class='integral'>
+        <image src='/image/jifenicon.png'></image>
+        <text>10/10</text>
+      </view>
+
+      <view class='countdown'>
+        <text>00:00:00</text>
+      </view>
+    </view>
+
+    <view class='draw-area' bindtap='bindDraw'>
+      <view class='area-title'>
+        <text>幸运抽奖</text>
+      </view>
+    </view>
+  </view> -->
+
+  <!-- <view class='column-line last-line'>
+    <view class='prop-area' bindtap='bindProp'>
+      <view class='area-title'>
+        <text>道具</text>
+      </view>
+    </view>
+    <navigator url="/pages/index/index" target="miniProgram" open-type="navigate" hover-class="navigator-hover" app-id="{{fayeappid}}" extra-data="1" path="pages/home/index/index">
+      <view class='question-area'>
+        <view class='area-title'>
+          <text>题库</text>
+        </view>
+      </view>
+    </navigator>
+
+    <view class='task-area' bindtap='bindTask'>
+      <view class='area-title'>
+        <text>任务中心</text>
+      </view>
+    </view>
+  </view> -->
+</view>

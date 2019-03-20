@@ -1,0 +1,77 @@
+<!--pages/test/result/result.wxml-->
+<block wx:if="{{resultInfo != null}}">
+  <view class='result-main'>
+    <view class='result-image'>
+      <image src='/image/success.png'></image>
+    </view>
+    <view class='reault-title'>
+      <text>{{resultInfo.marks}}</text>
+    </view>
+    <view class='result-info'>
+      <view class='result-info-score'>
+        <text class='score-title'>得分</text>
+        <text class='score-number'>{{resultInfo.score}}分</text>
+      </view>
+      <view class='result-info-time'>
+        <text class='time-title'>用时</text>
+        <text class='time-number'>{{resultInfo.totalElapseTime}}秒</text>
+      </view>
+    </view>
+
+    <view class='reault-line'>
+      <image src="/image/line.png"></image>
+    </view>
+    <block wx:if="{{fayue_skey != null}}">
+      <block wx:if="{{money != -1}}">
+        <view class='add-integral'>
+          <image src='/image/jifenicon.png'></image>
+          <text>+{{money}}元消费保障金</text>
+        </view>
+      </block>
+      <block wx:else>
+        <view class='add-integral'>
+          <image src='/image/jifenicon.png'></image>
+          <text>+{{resultInfo.integral}}积分</text>
+        </view>
+      </block>
+
+    </block>
+    <block wx:else>
+      <view class='add-integral'>
+        <image src='/image/jifenicon.png'></image>
+        <text>+{{resultInfo.integral}}积分</text>
+      </view>
+    </block>
+
+    <view class='reault-line last-line'>
+      <image src="/image/line.png"></image>
+    </view>
+
+  </view>
+
+  <view class='botton-group'>
+    <view class='button-line'>
+      <!-- <view class='share-button' bindtap='bindShare'>
+      <text>分享好友领取双倍积分</text>
+    </view> -->
+      <block wx:if="{{fayue_skey != null && money != -1}}">
+        <button class="share-button" open-type="share">分享好友再领{{money}}元</button>
+      </block>
+      <block wx:else>
+        <button class="share-button" open-type="share">分享好友领取双倍积分</button>
+      </block>
+    </view>
+    <view class='button-line'>
+      <view class='recur-button' bindtap='bindAgain'>
+        <text>回首页</text>
+      </view>
+      <view class='rank-button' bindtap='bindRank'>
+        <text>排行榜</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- <view class='return-index'>
+  <text>返回首页</text>
+</view> -->
+</block>

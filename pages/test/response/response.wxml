@@ -1,0 +1,245 @@
+<block wx:if="{{baginShow == true}}">
+  <view class='begin-ready'>
+    <view class='ready-background'>
+      <image src='/image/background.png'></image>
+    </view>
+    <view class='ready-info'>
+      <block wx:if="{{readyTime > 3}}">
+        <image src='{{headImgUrl}}'></image>
+      </block>
+      <block wx:else>
+        <text>{{readyTime}}</text>
+      </block>
+    </view>
+  </view>
+
+</block>
+
+<block wx:else>
+
+  <block wx:if="{{questionInfo !=null}}">
+    <view class="response-header">
+      <view class='header-info'>
+        <view class='info-image'>
+          <image src='{{headImgUrl}}'></image>
+        </view>
+        <view class='info-name'>
+          <text>{{nickname}}</text>
+        </view>
+      </view>
+
+
+      <view class='header-number'>
+        <text class='all-number'><text class='now-number'>{{sequence}}</text>/10</text>
+      </view>
+    </view>
+
+    <view class='response-main'>
+      <view class='countDown'>
+        <view class='inside'>
+          <text>{{countDown}}</text>
+        </view>
+
+      </view>
+
+      <view class='subject'>
+        <text>{{questionInfo.questionName}}</text>
+      </view>
+
+      <view class='options-group'>
+        <block wx:if="{{questionInfo.optionC != ''}}">
+          <block wx:if="{{chooseOption == 'A'}}">
+            <block wx:if="{{chooseWrong == 1}}">
+              <view class='option-father'>
+                <view class='option-line correct-line' bindtap='bindChoose' data-content='{{questionInfo.optionA}}' data-chooseOption="A">
+                  <text>{{questionInfo.optionA}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/dui.png'></image>
+                </view>
+              </view>
+            </block>
+            <block wx:elif="{{chooseWrong == -1}}">
+              <view class='option-father'>
+                <view class='option-line fault-line' bindtap='bindChoose' data-content='{{questionInfo.optionA}}' data-chooseOption="A">
+                  <text>{{questionInfo.optionA}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/cuo.png'></image>
+                </view>
+              </view>
+            </block>
+          </block>
+          <block wx:else>
+            <view class='option-father'>
+              <view class='option-line' bindtap='bindChoose' data-content='{{questionInfo.optionA}}' data-chooseOption="A">
+                <text>{{questionInfo.optionA}}</text>
+              </view>
+            </view>
+          </block>
+
+
+          <block wx:if="{{chooseOption == 'B'}}">
+            <block wx:if="{{chooseWrong == 1}}">
+              <view class='option-father'>
+                <view class='option-line correct-line' bindtap='bindChoose' data-content='{{questionInfo.optionB}}' data-chooseOption="B">
+                  <text>{{questionInfo.optionB}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/dui.png'></image>
+                </view>
+              </view>
+            </block>
+            <block wx:elif="{{chooseWrong == -1}}">
+              <view class='option-father'>
+                <view class='option-line fault-line' bindtap='bindChoose' data-content='{{questionInfo.optionB}}' data-chooseOption="B">
+                  <text>{{questionInfo.optionB}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/cuo.png'></image>
+                </view>
+              </view>
+            </block>
+          </block>
+          <block wx:else>
+            <view class='option-father'>
+              <view class='option-line' bindtap='bindChoose' data-content='{{questionInfo.optionB}}' data-chooseOption="B">
+                <text>{{questionInfo.optionB}}</text>
+              </view>
+            </view>
+          </block>
+
+          <block wx:if="{{chooseOption == 'C'}}">
+            <block wx:if="{{chooseWrong == 1}}">
+              <view class='option-father'>
+                <view class='option-line correct-line' bindtap='bindChoose' data-content='{{questionInfo.optionC}}' data-chooseOption="C">
+                  <text>{{questionInfo.optionC}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/dui.png'></image>
+                </view>
+              </view>
+            </block>
+            <block wx:elif="{{chooseWrong == -1}}">
+              <view class='option-father'>
+                <view class='option-line fault-line' bindtap='bindChoose' data-content='{{questionInfo.optionC}}' data-chooseOption="C">
+                  <text>{{questionInfo.optionC}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/cuo.png'></image>
+                </view>
+              </view>
+            </block>
+          </block>
+          <block wx:else>
+            <view class='option-father'>
+              <view class='option-line' bindtap='bindChoose' data-content='{{questionInfo.optionC}}' data-chooseOption="C">
+                <text>{{questionInfo.optionC}}</text>
+              </view>
+            </view>
+          </block>
+        </block>
+
+
+        <block wx:else>
+          <view class='option-default'>
+          </view>
+          <block wx:if="{{chooseOption == 'A'}}">
+            <block wx:if="{{chooseWrong == 1}}">
+              <view class='option-father'>
+                <view class='option-line correct-line' bindtap='bindChoose' data-content='{{questionInfo.optionA}}' data-chooseOption="A">
+                  <text>{{questionInfo.optionA}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/dui.png'></image>
+                </view>
+              </view>
+            </block>
+            <block wx:elif="{{chooseWrong == -1}}">
+              <view class='option-father'>
+                <view class='option-line fault-line' bindtap='bindChoose' data-content='{{questionInfo.optionA}}' data-chooseOption="A">
+                  <text>{{questionInfo.optionA}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/cuo.png'></image>
+                </view>
+              </view>
+            </block>
+          </block>
+          <block wx:else>
+            <view class='option-father'>
+              <view class='option-line' bindtap='bindChoose' data-content='{{questionInfo.optionA}}' data-chooseOption="A">
+                <text>{{questionInfo.optionA}}</text>
+              </view>
+            </view>
+          </block>
+
+
+          <block wx:if="{{chooseOption == 'B'}}">
+            <block wx:if="{{chooseWrong == 1}}">
+              <view class='option-father'>
+                <view class='option-line correct-line' bindtap='bindChoose' data-content='{{questionInfo.optionB}}' data-chooseOption="B">
+                  <text>{{questionInfo.optionB}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/dui.png'></image>
+                </view>
+              </view>
+            </block>
+            <block wx:elif="{{chooseWrong == -1}}">
+              <view class='option-father'>
+                <view class='option-line fault-line' bindtap='bindChoose' data-content='{{questionInfo.optionB}}' data-chooseOption="B">
+                  <text>{{questionInfo.optionB}}</text>
+                </view>
+                <view class='check-image'>
+                  <image src='/image/cuo.png'></image>
+                </view>
+              </view>
+            </block>
+          </block>
+          <block wx:else>
+            <view class='option-father'>
+              <view class='option-line' bindtap='bindChoose' data-content='{{questionInfo.optionB}}' data-chooseOption="B">
+                <text>{{questionInfo.optionB}}</text>
+              </view>
+            </view>
+          </block>
+        </block>
+      </view>
+    </view>
+  </block>
+
+  <block wx:if="{{answerWrong == true}}">
+    <view class='marks'></view>
+    <view class='notice'>
+      <view class='notice-main'>
+        <view class='notice-main-title'>
+          <text>很遗憾，答错了哦！</text>
+        </view>
+        <view class='notice-main-image'>
+          <image src='/image/douzai.png'></image>
+        </view>
+        <block wx:if="{{fayue_skey != null}}">
+          <button class='notice-main-button watch-answer' open-type='share'>
+            <text>考一考好友</text>
+          </button> 
+        </block>
+        <block wx:else>
+          <navigator url="/page/test/response/response" target="miniProgram" open-type="navigate" hover-class="navigator-hover" app-id="{{fayueAppID}}" path="pages/home/article/article?article_id={{questionInfo.fayueId}}" hover-class="none">
+            <view class='notice-main-button watch-answer' bindtap='bindSure'>
+              <text>查看正确答案</text>
+            </view>
+          </navigator>
+        </block>
+
+
+        <view class='notice-main-button below' bindtap='bindNext'>
+          <text>继续答下一题</text>
+        </view>
+        <view class='notice-main-remark' bindtap='bindAlerts'>
+        </view>
+      </view>
+    </view>
+  </block>
+
+</block>

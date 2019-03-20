@@ -1,0 +1,253 @@
+/**index.wxss**/
+
+page {
+  background-color: #242262;
+}
+
+.main {
+  margin-top: 40rpx;
+  width: 670rpx;
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-area {
+  width: 670rpx;
+  height: 256rpx;
+  display: flex;
+  align-items: center;
+  border-radius: 10rpx;
+  /* background-color: #528bf2; */
+  justify-content: space-between;
+  background: url('http://imgbj.xianshikeji.com/touxiang.png') no-repeat;
+  background-size:670rpx 256rpx;
+}
+
+.userinfo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30rpx;
+}
+
+.userinfo-area .userheader {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userinfo-area .userheader image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100%;
+}
+
+.userinfo-area .userinfo {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo-area .userinfo .username {
+  font-size: 34rpx;
+  color: white;
+}
+
+.userinfo-area .userinfo .otherinfo {
+  font-size: 24rpx;
+  color: white;
+  margin-top: 15rpx;
+}
+
+.userdata-area {
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(69, 129, 246, 1);
+  box-shadow: 2rpx 2rpx 6rpx 0rpx rgba(5, 65, 25, 0.35);
+  border-radius: 28rpx;
+  margin-right: 30rpx;
+}
+
+.userdata-area image {
+  margin-left: 20rpx;
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.userdata-area text {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: white;
+  margin-right: 20rpx;
+}
+
+.test-area {
+  width: 670rpx;
+  height: 240rpx;
+  /* background: linear-gradient(-45deg, rgba(251, 153, 112, 1), rgba(247, 96, 95, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  background: url('http://imgbj.xianshikeji.com/daticeshi.png') no-repeat;
+  background-size:670rpx 240rpx;
+}
+
+.area-title-blod {
+  padding-top: 20rpx;
+  padding-left: 25rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 3rpx 3rpx 4rpx rgba(2, 20, 35, 0.5);
+}
+
+.area-title {
+  padding-top: 20rpx;
+  padding-left: 25rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 3rpx 3rpx 4rpx rgba(2, 20, 35, 0.5);
+}
+
+.rank-area {
+  width: 240rpx;
+  height: 240rpx;
+  /* background: linear-gradient(-45deg, rgba(157, 241, 249, 1), rgba(4, 179, 206, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  background: url('http://imgbj.xianshikeji.com/paihangbang.png') no-repeat;
+  background-size:240rpx 240rpx;
+}
+
+.challenge-area {
+  width: 400rpx;
+  height: 240rpx;
+  /* background: linear-gradient(-45deg, rgba(130, 142, 249, 1), rgba(184, 147, 253, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  background: url('http://imgbj.xianshikeji.com/datitiaozhan.png') no-repeat;
+  background-size:400rpx 240rpx;
+}
+
+.column-line {
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.sign-area {
+  width: 400rpx;
+  height: 200rpx;
+  /* background: linear-gradient(-45deg, rgba(245, 136, 100, 1), rgba(251, 172, 103, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  background: url('http://imgbj.xianshikeji.com/qiandao.png') no-repeat;
+  background-size:400rpx 200rpx;
+}
+
+.sign-area .integral {
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 30rpx;
+}
+.sign-area .integral image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.sign-area .integral text {
+  color: white;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+}
+
+.sign-area .countdown {
+  width:152rpx;
+height:36rpx;
+background:rgba(248,182,45,1);
+box-shadow:0rpx 2rpx 4rpx 0rpx rgba(255,255,255,0.3);
+border-radius:18rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 30rpx;
+margin-top: 15rpx;
+border: 4rpx solid rgba(255,255,255,0.25);
+}
+
+.sign-area .countdown text {
+  color: #FFFFFF;
+  font-size: 20rpx;
+}
+
+
+.draw-area {
+  width: 240rpx;
+  height: 200rpx;
+  /* background: linear-gradient(-45deg, rgba(135, 201, 252, 1), rgba(65, 131, 245, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  background: url('http://imgbj.xianshikeji.com/xingyunchoujiang.png') no-repeat;
+  background-size:240rpx 200rpx;
+}
+
+.prop-area {
+  width: 185rpx;
+  height: 200rpx;
+  /* background: linear-gradient(-45deg, rgba(157, 241, 249, 1), rgba(4, 179, 206, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  background: url('http://imgbj.xianshikeji.com/daoju.png') no-repeat;
+  background-size:185rpx 200rpx;
+}
+
+.question-area {
+  width: 185rpx;
+  height: 200rpx;
+  /* background: linear-gradient(-45deg, rgba(210, 238, 21, 1), rgba(136, 195, 10, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  background: url('http://imgbj.xianshikeji.com/zhishishengji.png') no-repeat;
+  background-size:185rpx 200rpx;
+}
+
+.task-area {
+  width: 240rpx;
+  height: 200rpx;
+  /* background: linear-gradient(-45deg, rgba(179, 110, 246, 1), rgba(244, 119, 199, 1)); */
+  box-shadow: 6rpx 6rpx 16rpx 0rpx rgba(2, 20, 35, 0.2);
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  background: url('http://imgbj.xianshikeji.com/zuorenwu.png') no-repeat;
+  background-size:240rpx 200rpx;
+}
+
+
+.last-line {
+  margin-bottom: 40rpx;
+}
+
+.loginButton {
+  font-size: 34rpx;
+  color: #FFFFFF;
+  border: 0rpx;
+  background-color: #3F86F9;
+  
+}
+
+.loginButton::after {
+  border: 0rpx;
+}

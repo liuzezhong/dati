@@ -1,0 +1,107 @@
+/* pages/task/index/index.wxss */
+
+page {
+  background-color: #242262;
+}
+
+.task-list {
+  width: 670rpx;
+  margin-left: 40rpx;
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-line {
+  width: 670rpx;
+  height: 180rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.task-image {
+  margin-left: 30rpx;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-image image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+
+.task-info {
+  width: 300rpx;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.task-info-title {
+  color: #000;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.task-info-distrb {
+  margin-top: 10rpx;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.red-text {
+  color: #ff4a49;
+}
+
+.task-button {
+  width: 160rpx;
+  height: 66rpx;
+  margin-left: 20rpx;
+}
+
+.task-button button {
+  width: 160rpx;
+  height: 66rpx;
+  background: linear-gradient(-45deg, rgba(251, 153, 112, 1), rgba(247, 96, 95, 1));
+  border-radius: 33rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  border: 0rpx;
+}
+
+.task-button button::after {
+  border: 0rpx;
+}
+
+.no-button {
+  width: 160rpx;
+  height: 66rpx;
+  margin-left: 20rpx;
+}
+
+.no-button button {
+  width: 160rpx;
+  height: 66rpx;
+  background: #ACACAC;
+  border-radius: 33rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  border: 0rpx;
+}
+
+.no-button button::after {
+  border: 0rpx;
+}

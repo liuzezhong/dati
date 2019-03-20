@@ -1,0 +1,202 @@
+/* pages/wallet/index/index.wxss */
+
+page {
+  background-color: #222166;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 670rpx;
+  margin-left: 40rpx;
+}
+
+.main-header {
+  margin-top: 40rpx;
+  width: 670rpx;
+  height: 350rpx;
+  background: linear-gradient(-45deg, rgba(130, 142, 249, 1), rgba(184, 147, 253, 1));
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-header-integral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 335rpx;
+}
+
+.main-header-redpacket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 335rpx;
+}
+
+.info-integral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-integral .text-name {
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.info-integral .text-number {
+  color: #fff;
+  font-size: 60rpx;
+  margin-top: 10rpx;
+  font-weight: bold;
+}
+
+.button-info {
+  margin-top: 30rpx;
+  width: 280rpx;
+  height: 80rpx;
+  background-color: #c5bdfd;
+  border-radius: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-info text {
+  color: #fff;
+  font-size: 34rpx;
+}
+
+.hongbao-image {
+  width: 30rpx;
+  height: 36rpx;
+  margin-right: 21rpx;
+}
+
+.xianjin-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 17rpx;
+}
+
+.main-recover {
+  width: 670rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin-top: 30rpx;
+  margin-bottom: 180rpx;
+}
+
+.recover-header {
+  display: flex;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+
+.recover-header image {
+  width: 32rpx;
+  height: 36rpx;
+}
+
+.recover-header text {
+  color: #000;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+
+.recover-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+}
+
+.recover-line {
+  height: 123rpx;
+  width: 610rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+
+.recover-info {
+  width: 400rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.recover-info .recover-info-name {
+  color: #000;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.recover-info .recover-info-time {
+  color: #666;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+
+.recover-number {
+  display: flex;
+  width: 210rpx;
+  justify-content: flex-end;
+}
+
+.recover-number .number {
+  font-size: 40rpx;
+  color: #03bc01;
+}
+
+.recover-number .fu-number {
+  font-size: 40rpx;
+  color: #000;
+}
+
+.button-bar {
+  width: 750rpx;
+  height: 128rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0rpx 1rpx 0rpx 0rpx rgba(204, 204, 204, 1);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+}
+
+.rank {
+  width: 240rpx;
+  height: 88rpx;
+  border: 3rpx solid rgba(247, 96, 95, 1);
+  border-radius: 44rpx;
+  font-size: 34rpx;
+  color: #f7605f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40rpx;
+}
+
+.invint {
+  width: 400rpx;
+  height: 88rpx;
+  background: linear-gradient(-30deg, rgba(251, 153, 112, 1), rgba(247, 96, 95, 1));
+  border-radius: 44rpx;
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

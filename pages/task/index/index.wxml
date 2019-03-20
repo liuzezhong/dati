@@ -1,0 +1,68 @@
+<!--pages/task/index/index.wxml-->
+<view class='task-list'>
+  <view class='task-line'>
+    <view class='task-image'>
+      <image src='/image/hongbao.png'></image>
+    </view>
+    <view class='task-info'>
+      <text class='task-info-title'>邀请有礼</text>
+      <text class='task-info-distrb'>奖励<text class='red-text'>0.1元</text>红包+<text class='red-text'>1张</text>双倍卡</text>
+    </view>
+    <view class='task-button'>
+      <button>去邀请</button>
+    </view>
+  </view>
+
+  <view class='task-line'>
+    <view class='task-image'>
+      <image src='/image/senven.png'></image>
+    </view>
+    <view class='task-info'>
+      <text class='task-info-title'>连续7天登录</text>
+      <text class='task-info-distrb'>奖励<text class='red-text'>3张</text>抽奖卡</text>
+    </view>
+    <view class='no-button'>
+      <button>0/7</button>
+    </view>
+  </view>
+
+  <view class='task-line'>
+    <view class='task-image'>
+      <image src='/image/weichat.png'></image>
+    </view>
+    <view class='task-info'>
+      <text class='task-info-title'>关注微信公众号</text>
+      <text class='task-info-distrb'>奖励<text class='red-text'>0.5元</text>红包+<text class='red-text'>20</text>积分</text>
+    </view>
+    <view class='task-button'>
+      <button>去邀请</button>
+    </view>
+  </view>
+
+  <view class='task-line'>
+    <view class='task-image'>
+      <image src='/image/fayuelogo.png'></image>
+    </view>
+    <view class='task-info'>
+      <text class='task-info-title'>体验法曰小程序</text>
+      <text class='task-info-distrb'>前往体验可领取<text class='red-text'>20</text>红积分</text>
+    </view>
+    <view class='task-button'>
+      <button>去体验</button>
+    </view>
+  </view>
+
+  <view class='task-line'>
+    <view class='task-image'>
+      <image src='/image/lvdoulogo.png'></image>
+    </view>
+    <view class='task-info'>
+      <text class='task-info-title'>体验律兜小程序</text>
+      <text class='task-info-distrb'>前往体验可领取<text class='red-text'>20</text>红积分</text>
+    </view>
+    <view class='task-button'>
+      <button>去体验</button>
+    </view>
+  </view>
+
+</view>

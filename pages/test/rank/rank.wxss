@@ -1,0 +1,191 @@
+/* pages/test/rank/rank.wxss */
+
+page {
+  background-color: #222166;
+}
+
+.background-line {
+  height: 60rpx;
+  background-color: #222166;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  width: 750rpx;
+}
+
+.user-rank {
+  margin-left: 40rpx;
+  margin-top: 60rpx;
+  width: 670rpx;
+  height: 200rpx;
+  background: linear-gradient(-10deg, rgba(135, 201, 252, 1), rgba(65, 131, 245, 1));
+  box-shadow: 0rpx 5rpx 10rpx 0rpx rgba(4, 65, 32, 0.35);
+  border-radius: 16rpx 16rpx 0rpx 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.user-rank-left {
+  display: flex;
+  align-items: center;
+  margin-left: 40rpx;
+}
+
+.user-rank-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.user-rank-info .number {
+  font-size: 36rpx;
+  color: #ffef00;
+  font-weight: bold;
+}
+
+.user-rank-info .name {
+  font-size: 24rpx;
+  color: #ffef00;
+  margin-top: 10rpx;
+}
+
+.user-header {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40rpx;
+}
+
+.user-header image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 100%;
+}
+
+.user-name {
+  font-size: 30rpx;
+  color: white;
+  margin-left: 20rpx;
+}
+
+.user-score {
+  margin-right: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-score .score {
+  font-size: 34rpx;
+  color: white;
+}
+
+.user-score .time {
+  font-size: 24rpx;
+  color: white;
+  margin-top: 10rpx;
+}
+
+.rank-list {
+  width: 630rpx;
+  background-color: white;
+  margin-left: 60rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80rpx;
+  margin-top: 260rpx;
+  
+  
+}
+
+.rank-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rank-number {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
+}
+
+.rank-number text {
+  font-size: 30rpx;
+  color: #0696ff;
+}
+
+.rank-number image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.rank-right {
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 160rpx;
+  width: 520rpx;
+  border-bottom: 2rpx solid #DEEBF4;
+}
+
+.rank-info {
+  display: flex;
+  align-items: center;
+}
+
+.rank-user-header {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+
+.rank-user-header image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+}
+
+.rank-user-name {
+  margin-left: 20rpx;
+  color: #333333;
+  font-size: 30rpx;
+}
+
+.rank-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30rpx;
+}
+
+.rank-score .score {
+  color: #FFAE0D;
+  font-size: 34rpx;
+}
+
+.rank-score .time {
+  font-size: 24rpx;
+  color: #333333;
+  margin-top: 10rpx;
+}
+
+.bottom-line {
+  height: 60rpx;
+  width: 750rpx;
+}

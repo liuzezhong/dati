@@ -1,0 +1,106 @@
+<!--pages/wallet/index/index.wxml-->
+<view class='main'>
+  <view class='main-header'>
+    <view class='main-header-integral'>
+      <view class='info-integral'>
+        <text class='text-name'>积分</text>
+        <text class='text-number'>666</text>
+      </view>
+      <view class='button-info'>
+        <image class="hongbao-image" src='/image/hongbaotixian.png'></image>
+        <text>转为红包</text>
+      </view>
+    </view>
+    <view class='main-header-redpacket'>
+      <view class='info-integral'>
+        <text class='text-name'>红包</text>
+        <text class='text-number'>1.25</text>
+      </view>
+      <view class='button-info'>
+        <image class="xianjin-image" src='/image/xianjintixian.png'></image>
+        <text>立即提现</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='main-recover'>
+    <view class='recover-header'>
+      <image src='/image/recover.png'></image>
+      <text>红包记录</text>
+    </view>
+    <view class='recover-main'>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number'>+ 0.30</text>
+        </view>
+      </view>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number fu-number'>- 0.30</text>
+        </view>
+      </view>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number'>+ 0.30</text>
+        </view>
+      </view>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number'>+ 0.30</text>
+        </view>
+      </view>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number'>+ 0.30</text>
+        </view>
+      </view>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number'>+ 0.30</text>
+        </view>
+      </view>
+      <view class='recover-line'>
+        <view class='recover-info'>
+          <text class='recover-info-name'>转化收益</text>
+          <text class='recover-info-time'>2018-11-09 10:28:22</text>
+        </view>
+        <view class='recover-number'>
+          <text class='number'>+ 0.30</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='button-bar'>
+  <view class='rank'>
+    <text>收益榜</text>
+  </view>
+  <view class='invint'>
+    <text>邀请好友奖励红包</text>
+  </view>
+</view>
